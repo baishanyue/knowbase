@@ -1,0 +1,7 @@
+# 仅当 KNOWBASE_RETRIEVER_BACKEND=milvus 时需要(向量化 + 重排)。镜像构建时用 --build-arg INSTALL_ML=1 启用。
+# 模型文件(bge-m3 / bge-reranker-large)通过挂载目录提供,见 README「模型准备」。
+torch>=2.2
+transformers>=4.40
+sentence-transformers>=3.0
+pymilvus>=2.4.9
+pymilvus[model]>=2.4.9  # 提供 milvus_model.hybrid.BGEM3EmbeddingFunction

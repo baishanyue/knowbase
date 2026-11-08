@@ -1,0 +1,35 @@
+[project]
+name = "knowbase"
+version = "1.0.0"
+description = "知底 KnowBase · 企业知识库智能问答平台:基于企业制度文档的 RAG 问答,支持部门级权限隔离、引用溯源与审计"
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["knowbase*"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py311"
+extend-exclude = ["storage", "models"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "BLE", "S", "C4", "SIM"]
+ignore = [
+    "E501",   # 中文注释/提示词行较长,由 line-length 约束代码即可
+    "B008",   # FastAPI 依赖注入的标准写法 Depends(...) 作为默认参数
+    "S608",   # 动态 SQL 拼接:本项目均使用 ORM 参数化,无字符串拼 SQL
+    "BLE001", # 在边界处(审计/后台任务/外部服务)有意捕获 Exception 并记录
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "S105", "S106", "S311"]
+"scripts/*" = ["S101", "S105", "S311"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::SyntaxWarning"]
