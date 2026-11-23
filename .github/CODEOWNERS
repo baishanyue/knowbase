@@ -1,0 +1,5 @@
+# 请替换为实际的团队/负责人
+*                       @your-org/knowbase-maintainers
+/knowbase/core/security.py   @your-org/security-reviewers
+/knowbase/rag/retrievers.py  @your-org/security-reviewers
+/knowbase/rag/retrieval_service.py @your-org/security-reviewers
