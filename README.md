@@ -27,6 +27,8 @@
 - **文档版本无感切换**:新版本入库成功后才归档旧版本,失败回退不影响线上;
 - **可插拔**:LLM / 检索器 / 重排器 / KV 都是协议,测试与 CI 不需要 GPU、向量库或真实模型。
 
+> 想了解设计取舍与完整链路,请看 **[项目详解 docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**。
+
 ## 技术栈
 
 | 层 | 选型 |
@@ -144,4 +146,4 @@ docker compose up -d --build
 8. **多实例**:限流与令牌吊销需配置 Redis;`memory` 检索后端不支持多实例。
 9. **许可证**:仓库尚未指定 License,请按公司开源/内部代码政策补充。
 
-更多:[SECURITY.md](SECURITY.md) · [CONTRIBUTING.md](CONTRIBUTING.md) · [CHANGELOG.md](CHANGELOG.md)
+更多:[项目详解](docs/ARCHITECTURE.md) · [SECURITY.md](SECURITY.md) · [CONTRIBUTING.md](CONTRIBUTING.md) · [CHANGELOG.md](CHANGELOG.md)
