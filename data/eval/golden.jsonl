@@ -1,0 +1,14 @@
+{"id": "leave-1", "user": "it_bob", "question": "工作满5年年假有几天", "expect_title": "员工休假管理制度", "expect_keywords": ["5 天"]}
+{"id": "leave-2", "user": "it_bob", "question": "年假没休完能不能顺延", "expect_title": "员工休假管理制度", "expect_keywords": ["3 月 31 日"]}
+{"id": "leave-3", "user": "fin_carl", "question": "女员工产假一共多少天", "expect_title": "员工休假管理制度", "expect_keywords": ["98 天"]}
+{"id": "leave-4", "user": "it_bob", "question": "病假需要提供什么证明", "expect_title": "员工休假管理制度", "expect_keywords": ["诊断证明"]}
+{"id": "vpn-1", "user": "fin_carl", "question": "VPN连接提示809错误怎么办", "expect_title": "IT 远程办公与 VPN 使用指南", "expect_keywords": ["IPSec"]}
+{"id": "vpn-2", "user": "it_bob", "question": "VPN密码多久要换一次", "expect_title": "IT 远程办公与 VPN 使用指南", "expect_keywords": ["90 天"]}
+{"id": "exp-1", "user": "it_bob", "question": "上海出差住宿每晚报销上限是多少", "expect_title": "差旅与费用报销制度", "expect_keywords": ["600"]}
+{"id": "exp-2", "user": "hr_amy", "question": "增值税专用发票多久内要提交抵扣", "expect_title": "差旅与费用报销制度", "expect_keywords": ["60 天"]}
+{"id": "acl-hr-ok", "user": "hr_amy", "question": "P6 月薪带宽是多少", "expect_title": "薪酬体系与调薪规则", "expect_keywords": ["25000"]}
+{"id": "acl-hr-deny", "user": "it_bob", "question": "P6 月薪带宽是多少", "forbid_titles": ["薪酬体系与调薪规则"], "should_refuse": true}
+{"id": "acl-fin-ok", "user": "fin_carl", "question": "50万以上的采购谁来审批", "expect_title": "预算审批与内部审计流程", "expect_keywords": ["总经理办公会"]}
+{"id": "acl-fin-deny", "user": "hr_amy", "question": "50万以上的采购谁来审批", "forbid_titles": ["预算审批与内部审计流程"], "should_refuse": true}
+{"id": "oos-1", "user": "it_bob", "question": "今天北京天气怎么样", "should_refuse": true}
+{"id": "oos-2", "user": "fin_carl", "question": "推荐几部好看的科幻电影", "should_refuse": true}

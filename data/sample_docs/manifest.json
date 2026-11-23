@@ -1,0 +1,7 @@
+[
+  {"file": "hr_leave_policy.md", "title": "员工休假管理制度", "category": "hr", "acl_tags": ["public"]},
+  {"file": "it_vpn_guide.md", "title": "IT 远程办公与 VPN 使用指南", "category": "it", "acl_tags": ["public"]},
+  {"file": "finance_reimbursement.md", "title": "差旅与费用报销制度", "category": "finance", "acl_tags": ["public"]},
+  {"file": "hr_compensation_confidential.md", "title": "薪酬体系与调薪规则", "category": "hr", "acl_tags": ["dept:hr"]},
+  {"file": "finance_budget_internal.md", "title": "预算审批与内部审计流程", "category": "finance", "acl_tags": ["dept:finance"]}
+]
